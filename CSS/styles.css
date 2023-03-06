@@ -1,28 +1,38 @@
 :root {
-    --main-text-color: #434455;
-    --accent-color: #4D5AE5;
-    --back-style-color: #2E2F42;
+    --text: #434455;
+    --primary_brand: #4D5AE5;
+    --dark: #2E2F42;
+    --pressed_state: #404BBF;
+    --subtle_text: #8E8F99;
+    --success: #31D0AA;
+    --accent: #E7E9FC;
+    --light: #F4F4Fd;
+    --modal_overlay: #2E2F42;
+    --hero_background: rgb(46, 47, 66, 0.7);
+    --white_background: #FFFFFF;
 
 }
 
 body {
-    font-family: 'Roboto' sans-serif;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
-    color: var(--main-text-color);
+    color: var(--text);
     font-weight: 400;
 
 }
 
-li {
+li,
+a {
     list-style: none;
+    text-decoration: none;
 }
 
-/*----------HEADER---------*/
+/*----------HEADER-FOOTER--------*/
 .header {}
 
 .header-navigat {}
 
-.header-logo {
+.logo {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 800;
@@ -32,38 +42,68 @@ li {
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    color: var(--dark);
 }
 
-.header-logo span {
-    color: var(--accent-color);
+.logo span {
+    color: var(--primary_brand);
 }
 
-.header-item {
+.header-item a {
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--dark);
 
+}
+
+.header-item a:is(:hover, :focus) {
+    color: var(--pressed_state);
 }
 
 .header-address {}
 
 .header-list {}
 
-.header-contacts {
+.header-contacts a {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--text);
+}
+
+.header-contacts a:is(:hover, :focus) {
+    color: var(--pressed_state);
+}
+
+.footer {
+    background-color: var(--dark);
+
+}
+
+.footer-logo {
+    line-height: 1.17;
+    color: var(--light);
+}
+
+.footer-text {
+
+    font-size: 16px;
+    line-height: 1.5;
+
+    letter-spacing: 0.02em;
+
+    color: var(--accent);
 }
 
 /*----------MAIN---------*/
 .face {
-    background-color: var(--back-style-color);
+    background-color: var(--dark);
 }
 
 .face-text {
@@ -72,7 +112,7 @@ li {
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
+    color: var(--white_background);
 }
 
 .face-btn {
@@ -83,14 +123,15 @@ li {
     display: flex;
     align-items: center;
     letter-spacing: 0.04em;
-    background-color: var(--accent-color);
-
-    color: #FFFFFF;
+    background-color: var(--primary_brand);
+    color: var(--white_background);
 
 
 }
 
-.targets {}
+.face-btn:is(:hover, :focus) {
+    background-color: var(--pressed_state);
+}
 
 .targets-list {}
 
@@ -102,16 +143,15 @@ li {
     line-height: 1.2;
     letter-spacing: 0.02em;
 
-    color: #2E2F42;
+    color: var(--dark);
 }
 
 .targets-text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 
-    color: #434455;
+    color: var(--text);
 }
 
 .activity {}
@@ -125,7 +165,7 @@ li {
     letter-spacing: 0.02em;
     text-transform: capitalize;
 
-    color: #2E2F42;
+    color: var(--dark);
 }
 
 .activity-list {}
@@ -141,7 +181,7 @@ li {
     letter-spacing: 0.02em;
     text-transform: capitalize;
 
-    color: #2E2F42;
+    color: var(--dark);
 }
 
 .team-list {}
@@ -156,15 +196,12 @@ li {
     text-align: center;
     letter-spacing: 0.02em;
 
-    color: #2E2F42;
+    color: var(--dark);
 
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 }
 
 .team-job {
-    font-weight: 400;
+
     font-size: 16px;
     line-height: 1.5;
 
@@ -172,10 +209,59 @@ li {
     letter-spacing: 0.02em;
 
 
-    color: #434455;
+    color: var(--text);
 
+}
 
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+/*----------PORTFOLIO---------*/
+.filters {}
+
+.filters-btn button {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    /* IRIS */
+
+    color: var(--primary_brand);
+}
+
+.filters-btn button:is(:hover, :focus) {
+    color: var(--white_background);
+    background-color: var(--pressed_state);
+}
+
+.exempl {}
+
+.exempl-item {}
+
+.exempl-job {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+
+    letter-spacing: 0.02em;
+
+    /* NAVY BLUE */
+
+    color: var(--dark);
+
+}
+
+.exempl-filter {
+
+    font-size: 16px;
+    line-height: 1.5;
+
+    letter-spacing: 0.02em;
+
+    /* SLATE */
+
+    color: var(--text);
 }
