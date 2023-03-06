@@ -1,0 +1,181 @@
+:root {
+    --main-text-color: #434455;
+    --accent-color: #4D5AE5;
+    --back-style-color: #2E2F42;
+
+}
+
+body {
+    font-family: 'Roboto' sans-serif;
+    font-style: normal;
+    color: var(--main-text-color);
+    font-weight: 400;
+
+}
+
+li {
+    list-style: none;
+}
+
+/*----------HEADER---------*/
+.header {}
+
+.header-navigat {}
+
+.header-logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.header-logo span {
+    color: var(--accent-color);
+}
+
+.header-item {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+
+}
+
+.header-address {}
+
+.header-list {}
+
+.header-contacts {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+/*----------MAIN---------*/
+.face {
+    background-color: var(--back-style-color);
+}
+
+.face-text {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.face-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    background-color: var(--accent-color);
+
+    color: #FFFFFF;
+
+
+}
+
+.targets {}
+
+.targets-list {}
+
+.targets-item {}
+
+.targets-main {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+    color: #2E2F42;
+}
+
+.targets-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    color: #434455;
+}
+
+.activity {}
+
+.activiti-main {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+
+    color: #2E2F42;
+}
+
+.activity-list {}
+
+.team {}
+
+.team-main {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+
+    color: #2E2F42;
+}
+
+.team-list {}
+
+.team-item {}
+
+.team-person {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: #2E2F42;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.team-job {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+
+    text-align: center;
+    letter-spacing: 0.02em;
+
+
+    color: #434455;
+
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
