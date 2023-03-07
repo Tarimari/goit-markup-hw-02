@@ -82,18 +82,18 @@ body {
     color: var(--text);
 }
 
-.header-contacts a:is(:hover, :focus) {
+.header-contacts:is(:hover, :focus) {
     color: var(--pressed_state);
 }
 
 .footer {
-    background-color: var(--light);
+    background-color: var(--dark);
 
 }
 
 .footer-logo {
 
-    color: var(--dark);
+    color: var(--light);
 }
 
 .footer-text {
@@ -132,6 +132,7 @@ body {
     letter-spacing: 0.04em;
     background-color: var(--primary_brand);
     color: var(--white_background);
+    cursor: pointer;
 
 
 }
