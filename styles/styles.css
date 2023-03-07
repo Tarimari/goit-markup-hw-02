@@ -21,11 +21,14 @@ body {
 
 }
 
-li,
-a {
+.list {
     list-style: none;
+}
+
+.link {
     text-decoration: none;
 }
+
 
 /*----------HEADER-FOOTER--------*/
 .header {}
@@ -42,14 +45,14 @@ a {
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--dark);
-}
-
-.logo span {
     color: var(--primary_brand);
 }
 
-.header-item a {
+.logo span {
+    color: var(--dark);
+}
+
+.header-item {
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -59,15 +62,17 @@ a {
 
 }
 
-.header-item a:is(:hover, :focus) {
+.header-item:is(:hover, :focus) {
     color: var(--pressed_state);
 }
 
-.header-address {}
+.header-address {
+    font-style: normal;
+}
 
 .header-list {}
 
-.header-contacts a {
+.header-contacts {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -82,13 +87,13 @@ a {
 }
 
 .footer {
-    background-color: var(--dark);
+    background-color: var(--light);
 
 }
 
 .footer-logo {
 
-    color: var(--light);
+    color: var(--dark);
 }
 
 .footer-text {
@@ -112,10 +117,12 @@ a {
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
+    cursor: pointer;
     color: var(--white_background);
 }
 
 .face-btn {
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;

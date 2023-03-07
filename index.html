@@ -4,32 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./CSS/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <title>WebStudio</title>
   </head>
   <body>
     <header class="header">
-      <nav class="header-navigat">
-        <a class="logo" href="./index.html"><span>Web</span>Studio</a>
+      <nav class="header-navigat list">
+        <a class="logo link" href="./index.html">Web<span>Studio</span></a>
         <ul class="header-navigat">
-          <li class="header-item"><a href="./index.html">Studio</a></li>
-          <li class="header-item"><a href="./portfolio.html">Portfolio</a></li>
-          <li class="header-item"><a href="">Contacts</a></li>
+          <li><a class="header-item link" href="./index.html">Studio</a></li>
+          <li>
+            <a class="header-item link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li><a class="header-item link" href="">Contacts</a></li>
         </ul>
       </nav>
-      <address class="header-address">
+      <address class="header-address list">
         <ul class="header-list">
-          <li class="header-contacts">
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <li>
+            <a class="header-contacts link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
           </li>
-          <li class="header-contacts">
-            <a href="tel:+110001111111">+11 (000) 111-11-11</a>
+          <li>
+            <a class="header-contacts link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
           </li>
         </ul>
       </address>
@@ -40,8 +46,8 @@
         <button class="face-btn" type="button">Order Service</button>
       </section>
       <section class="targets">
-        <h2></h2>
-        <ul class="targets-list">
+        <h2 class="targets_zero"></h2>
+        <ul class="targets-list list">
           <li class="targets-item">
             <h3 class="targets-main">Strategy</h3>
             <p class="targets-text">
@@ -74,7 +80,7 @@
       </section>
       <section class="activity">
         <h2 class="activiti-main">What are we doing</h2>
-        <ul class="activity-list">
+        <ul class="activity-list list">
           <li>
             <img
               src="./images/img1.jpg"
@@ -103,7 +109,7 @@
       </section>
       <section class="team">
         <h2 class="team-main">Our Team</h2>
-        <ul class="team-list">
+        <ul class="team-list list">
           <li class="team-item">
             <img
               src="./images/team_card_1.jpg"
@@ -148,7 +154,9 @@
       </section>
     </main>
     <footer class="footer">
-      <a class="logo footer-logo" href="./index.html"><span>Web</span>Studio</a>
+      <a class="logo footer-logo link" href="./index.html"
+        >Web<span>Studio</span></a
+      >
       <p class="footer-text">
         Increase the flow of customers and sales for your business with digital
         marketing & growth solutions.
