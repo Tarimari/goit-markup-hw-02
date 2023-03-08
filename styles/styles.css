@@ -224,7 +224,7 @@ body {
 /*----------PORTFOLIO---------*/
 .filters {}
 
-.filters-btn button {
+.filters-btn {
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -234,13 +234,14 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
+    cursor: pointer;
 
     /* IRIS */
 
     color: var(--primary_brand);
 }
 
-.filters-btn button:is(:hover, :focus) {
+.filters-btn:is(:hover, :focus) {
     color: var(--white_background);
     background-color: var(--pressed_state);
 }
