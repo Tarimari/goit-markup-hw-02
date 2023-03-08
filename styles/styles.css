@@ -48,7 +48,7 @@ body {
     color: var(--primary_brand);
 }
 
-.logo span {
+.header-logo {
     color: var(--dark);
 }
 
