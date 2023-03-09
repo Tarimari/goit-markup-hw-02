@@ -15,9 +15,7 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    font-style: normal;
     color: var(--text);
-    font-weight: 400;
 
 }
 
@@ -37,12 +35,9 @@ body {
 
 .logo {
     font-family: 'Raleway', sans-serif;
-    font-style: normal;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary_brand);
@@ -73,9 +68,7 @@ body {
 .header-list {}
 
 .header-contacts {
-    font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -92,17 +85,13 @@ body {
 }
 
 .footer-logo {
-
     color: var(--light);
 }
 
 .footer-text {
-
     font-size: 16px;
     line-height: 1.5;
-
     letter-spacing: 0.02em;
-
     color: var(--accent);
 }
 
@@ -122,19 +111,13 @@ body {
 }
 
 .face-btn {
-    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-
-    display: flex;
-    align-items: center;
     letter-spacing: 0.04em;
     background-color: var(--primary_brand);
     color: var(--white_background);
     cursor: pointer;
-
-
 }
 
 .face-btn:is(:hover, :focus) {
@@ -150,7 +133,6 @@ body {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-
     color: var(--dark);
 }
 
@@ -158,7 +140,6 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-
     color: var(--text);
 }
 
@@ -168,27 +149,24 @@ body {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
-
-    text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-
     color: var(--dark);
 }
 
 .activity-list {}
 
-.team {}
+.team {
+    background-color: var(--light);
+}
 
 .team-main {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
-
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-
     color: var(--dark);
 }
 
@@ -200,25 +178,17 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-
     text-align: center;
     letter-spacing: 0.02em;
-
     color: var(--dark);
-
 }
 
 .team-job {
-
     font-size: 16px;
     line-height: 1.5;
-
     text-align: center;
     letter-spacing: 0.02em;
-
-
     color: var(--text);
-
 }
 
 /*----------PORTFOLIO---------*/
@@ -229,15 +199,9 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-
-    display: flex;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
     cursor: pointer;
-
-    /* IRIS */
-
     color: var(--primary_brand);
 }
 
@@ -254,23 +218,13 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-
     letter-spacing: 0.02em;
-
-    /* NAVY BLUE */
-
     color: var(--dark);
-
 }
 
 .exempl-filter {
-
     font-size: 16px;
     line-height: 1.5;
-
     letter-spacing: 0.02em;
-
-    /* SLATE */
-
     color: var(--text);
 }
